@@ -49,4 +49,4 @@ RUN echo "jenkins ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
 USER jenkins
 
 # Expose Jenkins port
-EXPOSE 8080 50000
+EXPOSE 8080 50000 8090
