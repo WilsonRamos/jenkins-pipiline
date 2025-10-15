@@ -31,7 +31,7 @@ public class HelloController {
 
     @GetMapping("/hello4")
     public String saludar4(){
-        return "Hola Mundo con REST en Spring Boot";
+        return "Hola Mundo con REST en Spring Boot en el Hello 4";
     }
 
 
@@ -39,6 +39,12 @@ public class HelloController {
     @GetMapping("/hello6")
     public String saludar6(){
         return "Hola Mundo con REST en Spring Boot";
+    }
+
+    //Otro comentario
+    @GetMapping("/hello7")
+    public String saludar7(){
+        return "Hola Mundo con REST en Spring Boot cambiosS";
     }
 }
 
