@@ -86,7 +86,7 @@ public class ProductoControllerTest {
 
     @Test
     void eliminarProducto_CuandoSeLlama_DevuelveMensajeDeEliminacion() {
-        when(productoService.deleteProducto(1)).thenReturn("Producto eliminado !!1");
+        when(productoService.deleteProducto(1)).thenReturn("Producto eliminado !!1 Eliminando");
 
         String resultado = productoController.eliminarProducto(1);
 
