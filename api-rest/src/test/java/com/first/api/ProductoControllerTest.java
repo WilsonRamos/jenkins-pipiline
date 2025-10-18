@@ -71,7 +71,7 @@ public class ProductoControllerTest {
         assertEquals(producto.getId(), resultado.getId());
         verify(productoService, times(1)).getProductoById(1);
     }
-
+//Agrando comentato al test
     @Test
     void actualizarProducto_CuandoSeLlama_DevuelveProductoActualizado() {
         Producto producto = new Producto(1, "Producto 1", 10, 100.0);
