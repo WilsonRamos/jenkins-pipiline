@@ -86,12 +86,12 @@ public class ProductoControllerTest {
 
     @Test
     void eliminarProducto_CuandoSeLlama_DevuelveMensajeDeEliminacion() {
-        when(productoService.deleteProducto(1)).thenReturn("Producto eliminado !!1");
+        when(productoService.deleteProducto(1)).thenReturn("Producto eliminado !!1 Elimindo");
 
         String resultado = productoController.eliminarProducto(1);
 
         assertNotNull(resultado);
-        assertEquals("Producto eliminado !!1", resultado);
+        assertEquals("Producto eliminado !!1 Elimindo", resultado);
         verify(productoService, times(1)).deleteProducto(1);
     }
 }
